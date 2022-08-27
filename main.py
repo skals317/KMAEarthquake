@@ -9,7 +9,7 @@ data = json.loads(message)
 status = response.status_code
 
 if status == 200:# 지진정보가 정상적으로 불러와졌을경우
-    if str(data["micro"] = "True"):
+    if (str(data["micro"]) == "True"):
         print("한국 최근 미소지진정보")
     else :
         print("한국 최근 지진정보")
