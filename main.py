@@ -8,7 +8,7 @@ data = json.loads(message)
 
 status = response.status_code
 
-if status == 200:# 지진정보가 정상적으로 불러와졌을경
+if status == 200:# 지진정보가 정상적으로 불러와졌을경우
         print(str(data["type"]))
         print("번호 : "+str(data["occurnum"]))
         print("발생시각 : "+str(data["time"]))
