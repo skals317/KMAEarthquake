@@ -8,10 +8,7 @@ data = json.loads(message)
 
 status = response.status_code
 
-if status == 200:# 지진정보가 정상적으로 불러와졌을경우
-    if (str(data["micro"]) == "True"):
-        print("한국 최근 미소지진정보")
-    else :
+if status == 200:# 지진정보가 정상적으로 불러와졌을경
         print(str(data["type"]))
         print("번호 : "+str(data["occurnum"]))
         print("발생시각 : "+str(data["time"]))
